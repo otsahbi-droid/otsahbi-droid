@@ -1,0 +1,139 @@
+<svg width="900" height="280" viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0f"/>
+      <stop offset="100%" style="stop-color:#0f0f1a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7b61ff"/>
+      <stop offset="100%" style="stop-color:#00ffc8"/>
+    </linearGradient>
+    <linearGradient id="glow1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7b61ff;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#7b61ff;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="glow2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ffc8;stop-opacity:0.12"/>
+      <stop offset="100%" style="stop-color:#00ffc8;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="blur1">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+    <filter id="blur2">
+      <feGaussianBlur stdDeviation="30"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="280" fill="url(#bg)" rx="16"/>
+
+  <!-- Grid lines horizontal -->
+  <line x1="0" y1="40" x2="900" y2="40" stroke="#1e1e2e" stroke-width="1"/>
+  <line x1="0" y1="80" x2="900" y2="80" stroke="#1e1e2e" stroke-width="1"/>
+  <line x1="0" y1="120" x2="900" y2="120" stroke="#1e1e2e" stroke-width="1"/>
+  <line x1="0" y1="160" x2="900" y2="160" stroke="#1e1e2e" stroke-width="1"/>
+  <line x1="0" y1="200" x2="900" y2="200" stroke="#1e1e2e" stroke-width="1"/>
+  <line x1="0" y1="240" x2="900" y2="240" stroke="#1e1e2e" stroke-width="1"/>
+  <!-- Grid lines vertical -->
+  <line x1="90" y1="0" x2="90" y2="280" stroke="#1e1e2e" stroke-width="1"/>
+  <line x1="180" y1="0" x2="180" y2="280" stroke="#1e1e2e" stroke-width="1"/>
+  <line x1="270" y1="0" x2="270" y2="280" stroke="#1e1e2e" stroke-width="1"/>
+  <line x1="360" y1="0" x2="360" y2="280" stroke="#1e1e2e" stroke-width="1"/>
+  <line x1="450" y1="0" x2="450" y2="280" stroke="#1e1e2e" stroke-width="1"/>
+  <line x1="540" y1="0" x2="540" y2="280" stroke="#1e1e2e" stroke-width="1"/>
+  <line x1="630" y1="0" x2="630" y2="280" stroke="#1e1e2e" stroke-width="1"/>
+  <line x1="720" y1="0" x2="720" y2="280" stroke="#1e1e2e" stroke-width="1"/>
+  <line x1="810" y1="0" x2="810" y2="280" stroke="#1e1e2e" stroke-width="1"/>
+
+  <!-- Glow blobs -->
+  <circle cx="750" cy="60" r="130" fill="url(#glow1)" filter="url(#blur1)"/>
+  <circle cx="150" cy="220" r="110" fill="url(#glow2)" filter="url(#blur2)"/>
+
+  <!-- Top accent line -->
+  <rect x="0" y="0" width="900" height="3" fill="url(#accent)" rx="2"/>
+
+  <!-- Corner bracket top-left -->
+  <path d="M20,20 L20,50 M20,20 L50,20" stroke="#00ffc8" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Corner bracket bottom-right -->
+  <path d="M880,260 L880,230 M880,260 L850,260" stroke="#7b61ff" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Badge -->
+  <rect x="60" y="38" width="130" height="22" rx="4" fill="none" stroke="#00ffc8" stroke-width="1"/>
+  <text x="125" y="53" font-family="'Courier New', monospace" font-size="10" fill="#00ffc8" text-anchor="middle" letter-spacing="2">// PROFILE</text>
+
+  <!-- Name -->
+  <text x="60" y="120" font-family="'Georgia', serif" font-size="64" font-weight="bold" fill="white" letter-spacing="-2">Tesnim</text>
+
+  <!-- Gradient underline for name -->
+  <rect x="60" y="128" width="310" height="3" fill="url(#accent)" rx="2"/>
+
+  <!-- Role -->
+  <text x="62" y="160" font-family="'Courier New', monospace" font-size="14" fill="#a0a0b8" letter-spacing="1">Software Engineer  &amp;  Programmer</text>
+
+  <!-- Divider dot -->
+  <circle cx="60" cy="185" r="3" fill="#00ffc8"/>
+  <line x1="70" y1="185" x2="900" y2="185" stroke="#1e1e2e" stroke-width="1"/>
+
+  <!-- Language pills -->
+  <!-- HTML -->
+  <rect x="60" y="200" width="72" height="26" rx="6" fill="#1a1a28" stroke="#e34c26" stroke-width="1"/>
+  <circle cx="76" cy="213" r="4" fill="#e34c26"/>
+  <text x="85" y="218" font-family="'Courier New', monospace" font-size="11" fill="#e8e8f0">HTML</text>
+
+  <!-- CSS -->
+  <rect x="142" y="200" width="66" height="26" rx="6" fill="#1a1a28" stroke="#264de4" stroke-width="1"/>
+  <circle cx="157" cy="213" r="4" fill="#264de4"/>
+  <text x="166" y="218" font-family="'Courier New', monospace" font-size="11" fill="#e8e8f0">CSS</text>
+
+  <!-- JS -->
+  <rect x="218" y="200" width="62" height="26" rx="6" fill="#1a1a28" stroke="#f7df1e" stroke-width="1"/>
+  <circle cx="233" cy="213" r="4" fill="#f7df1e"/>
+  <text x="242" y="218" font-family="'Courier New', monospace" font-size="11" fill="#e8e8f0">JS</text>
+
+  <!-- C -->
+  <rect x="290" y="200" width="54" height="26" rx="6" fill="#1a1a28" stroke="#555599" stroke-width="1"/>
+  <circle cx="305" cy="213" r="4" fill="#555599"/>
+  <text x="314" y="218" font-family="'Courier New', monospace" font-size="11" fill="#e8e8f0">C</text>
+
+  <!-- Docker -->
+  <rect x="354" y="200" width="84" height="26" rx="6" fill="#1a1a28" stroke="#2496ED" stroke-width="1"/>
+  <text x="369" y="218" font-family="'Courier New', monospace" font-size="11" fill="#e8e8f0">🐳 Docker</text>
+
+  <!-- Linux -->
+  <rect x="448" y="200" width="78" height="26" rx="6" fill="#1a1a28" stroke="#FCC624" stroke-width="1"/>
+  <text x="463" y="218" font-family="'Courier New', monospace" font-size="11" fill="#e8e8f0">🐧 Linux</text>
+
+  <!-- Right side decorative code block -->
+  <rect x="620" y="55" width="240" height="155" rx="10" fill="#111118" stroke="#1e1e2e" stroke-width="1"/>
+  <rect x="620" y="55" width="240" height="28" rx="10" fill="#1a1a28"/>
+  <rect x="620" y="69" width="240" height="14" fill="#1a1a28"/>
+  <circle cx="641" cy="69" r="5" fill="#ff5f57"/>
+  <circle cx="658" cy="69" r="5" fill="#febc2e"/>
+  <circle cx="675" cy="69" r="5" fill="#28c840"/>
+  <text x="750" y="73" font-family="'Courier New', monospace" font-size="9" fill="#6b6b80" text-anchor="middle">about.js</text>
+
+  <text x="636" y="105" font-family="'Courier New', monospace" font-size="11" fill="#7b61ff">const</text>
+  <text x="672" y="105" font-family="'Courier New', monospace" font-size="11" fill="#e8e8f0"> dev </text>
+  <text x="695" y="105" font-family="'Courier New', monospace" font-size="11" fill="#00ffc8">=</text>
+  <text x="707" y="105" font-family="'Courier New', monospace" font-size="11" fill="#e8e8f0"> {</text>
+
+  <text x="648" y="122" font-family="'Courier New', monospace" font-size="11" fill="#a0a0b8">name:</text>
+  <text x="686" y="122" font-family="'Courier New', monospace" font-size="11" fill="#00ffc8"> "Tesnim"</text>
+  <text x="737" y="122" font-family="'Courier New', monospace" font-size="11" fill="#e8e8f0">,</text>
+
+  <text x="648" y="139" font-family="'Courier New', monospace" font-size="11" fill="#a0a0b8">role:</text>
+  <text x="682" y="139" font-family="'Courier New', monospace" font-size="11" fill="#00ffc8"> "SWE"</text>
+  <text x="715" y="139" font-family="'Courier New', monospace" font-size="11" fill="#e8e8f0">,</text>
+
+  <text x="648" y="156" font-family="'Courier New', monospace" font-size="11" fill="#a0a0b8">os:</text>
+  <text x="672" y="156" font-family="'Courier New', monospace" font-size="11" fill="#00ffc8"> "Linux"</text>
+  <text x="717" y="156" font-family="'Courier New', monospace" font-size="11" fill="#e8e8f0">,</text>
+
+  <text x="648" y="173" font-family="'Courier New', monospace" font-size="11" fill="#a0a0b8">ship:</text>
+  <text x="683" y="173" font-family="'Courier New', monospace" font-size="11" fill="#00ffc8"> true</text>
+
+  <text x="636" y="193" font-family="'Courier New', monospace" font-size="11" fill="#e8e8f0">}</text>
+
+  <!-- Bottom line -->
+  <rect x="0" y="277" width="900" height="3" fill="url(#accent)" rx="2"/>
+</svg>
