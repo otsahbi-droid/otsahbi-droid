@@ -1,5 +1,7 @@
 <div align="center">
 
+![Tesnim Banner](https://raw.githubusercontent.com/otsahbi-droid/otsahbi-droid/main/banner.svg)
+
 # 👋 Hey, I'm Tesnim
 
 ### 💻 Software Engineer & Programmer
