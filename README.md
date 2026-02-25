@@ -1,369 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tesnim — GitHub Profile README</title>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet"/>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+<div align="center">
 
-    :root {
-      --bg: #0a0a0f;
-      --card: #111118;
-      --border: #1e1e2e;
-      --accent: #00ffc8;
-      --accent2: #7b61ff;
-      --text: #e8e8f0;
-      --muted: #6b6b80;
-      --mono: 'Space Mono', monospace;
-      --sans: 'Syne', sans-serif;
-    }
+# 👋 Hey, I'm Tesnim
 
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: var(--sans);
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      padding: 40px 20px;
-      overflow-x: hidden;
-    }
+### 💻 Software Engineer & Programmer
 
-    /* animated grid background */
-    body::before {
-      content: '';
-      position: fixed;
-      inset: 0;
-      background-image:
-        linear-gradient(var(--border) 1px, transparent 1px),
-        linear-gradient(90deg, var(--border) 1px, transparent 1px);
-      background-size: 40px 40px;
-      opacity: 0.35;
-      z-index: 0;
-      pointer-events: none;
-    }
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00FFC8&center=true&vCenter=true&width=435&lines=Software+Engineer+%F0%9F%9A%80;Programmer+%F0%9F%92%BB;Linux+%26+Docker+Enthusiast+%F0%9F%90%A7)
 
-    .wrapper {
-      position: relative;
-      z-index: 1;
-      width: 100%;
-      max-width: 780px;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
+</div>
 
-    /* ---- HERO ---- */
-    .hero {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 48px 40px 40px;
-      position: relative;
-      overflow: hidden;
-      animation: fadeUp .7s ease both;
-    }
+---
 
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: -80px; right: -80px;
-      width: 300px; height: 300px;
-      background: radial-gradient(circle, rgba(0,255,200,.12), transparent 70%);
-      pointer-events: none;
-    }
-    .hero::after {
-      content: '';
-      position: absolute;
-      bottom: -60px; left: -60px;
-      width: 240px; height: 240px;
-      background: radial-gradient(circle, rgba(123,97,255,.1), transparent 70%);
-      pointer-events: none;
-    }
+## 🙋‍♀️ About Me
 
-    .badge {
-      font-family: var(--mono);
-      font-size: 11px;
-      color: var(--accent);
-      border: 1px solid var(--accent);
-      border-radius: 4px;
-      padding: 3px 10px;
-      display: inline-block;
-      letter-spacing: .1em;
-      margin-bottom: 20px;
-    }
+> I'm **Tesnim**, a passionate **Software Engineer** who loves building things from scratch.  
+> Comfortable at every layer — from low-level **C** to dynamic **web interfaces**.  
+> I live in the terminal and ship clean, efficient code.
 
-    .hero h1 {
-      font-family: var(--sans);
-      font-size: clamp(2.4rem, 6vw, 3.6rem);
-      font-weight: 800;
-      line-height: 1.1;
-      letter-spacing: -.02em;
-    }
+---
 
-    .hero h1 .name {
-      color: var(--accent);
-      display: block;
-    }
+## 🛠️ Languages & Technologies
 
-    .hero h1 .role {
-      color: var(--text);
-      display: block;
-    }
+### 💬 Languages
 
-    .hero p {
-      margin-top: 18px;
-      font-family: var(--mono);
-      font-size: 13px;
-      color: var(--muted);
-      line-height: 1.7;
-      max-width: 520px;
-    }
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 
-    .hero p span {
-      color: var(--accent2);
-    }
+### ⚙️ Technologies & Tools
 
-    /* ---- SECTION LABEL ---- */
-    .section-label {
-      font-family: var(--mono);
-      font-size: 11px;
-      letter-spacing: .15em;
-      color: var(--muted);
-      text-transform: uppercase;
-      margin-bottom: 12px;
-    }
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
-    /* ---- GRID ROW ---- */
-    .grid-2 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
+---
 
-    @media (max-width: 560px) {
-      .grid-2 { grid-template-columns: 1fr; }
-      .hero { padding: 32px 24px; }
-    }
+## 📊 GitHub Stats
 
-    /* ---- CARD ---- */
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 28px 28px 24px;
-      animation: fadeUp .7s ease both;
-    }
+<div align="center">
 
-    .card:nth-child(2) { animation-delay: .1s; }
-    .card:nth-child(3) { animation-delay: .2s; }
+![Tesnim's GitHub Stats](https://github-readme-stats.vercel.app/api?username=otsahbi-droid&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0a0a0f&title_color=00ffc8&icon_color=7b61ff&text_color=e8e8f0)
 
-    /* ---- LANGUAGE PILLS ---- */
-    .pills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 4px;
-    }
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=otsahbi-droid&layout=compact&theme=tokyonight&hide_border=true&bg_color=0a0a0f&title_color=00ffc8&text_color=e8e8f0)
 
-    .pill {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-family: var(--mono);
-      font-size: 12px;
-      color: var(--text);
-      background: #1a1a28;
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 8px 14px;
-      transition: border-color .2s, color .2s;
-    }
+</div>
 
-    .pill:hover {
-      border-color: var(--accent);
-      color: var(--accent);
-    }
+---
 
-    .pill .dot {
-      width: 8px; height: 8px;
-      border-radius: 50%;
-      flex-shrink: 0;
-    }
+## 🔥 Streak
 
-    /* language colors */
-    .dot-html   { background: #e34c26; }
-    .dot-css    { background: #264de4; }
-    .dot-c      { background: #555599; }
-    .dot-js     { background: #f7df1e; }
+<div align="center">
 
-    /* ---- TECH STACK ---- */
-    .tech-list {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      margin-top: 4px;
-    }
+[![GitHub Streak](https://streak-stats.demolab.com?user=otsahbi-droid&theme=tokyonight&hide_border=true&background=0a0a0f&ring=00ffc8&fire=7b61ff&currStreakLabel=00ffc8)](https://git.io/streak-stats)
 
-    .tech-item {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-family: var(--mono);
-      font-size: 12px;
-      color: var(--text);
-      background: #1a1a28;
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 10px 14px;
-      transition: border-color .2s, color .2s;
-    }
+</div>
 
-    .tech-item:hover {
-      border-color: var(--accent2);
-      color: var(--accent2);
-    }
+---
 
-    .tech-icon {
-      font-size: 18px;
-    }
+<div align="center">
 
-    /* ---- STAT BAR ---- */
-    .stat-bar-wrap {
-      margin-top: 4px;
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-    }
+*crafted with ❤️ by **Tesnim** · software engineer · always building*
 
-    .stat-row {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-
-    .stat-label {
-      display: flex;
-      justify-content: space-between;
-      font-family: var(--mono);
-      font-size: 11px;
-      color: var(--muted);
-    }
-
-    .stat-label span:last-child { color: var(--accent); }
-
-    .bar-bg {
-      height: 4px;
-      background: #1a1a28;
-      border-radius: 99px;
-      overflow: hidden;
-    }
-
-    .bar-fill {
-      height: 100%;
-      border-radius: 99px;
-      background: linear-gradient(90deg, var(--accent2), var(--accent));
-      animation: barGrow 1.2s ease both;
-      transform-origin: left;
-    }
-
-    @keyframes barGrow {
-      from { width: 0 !important; }
-    }
-
-    /* ---- FOOTER LINE ---- */
-    .footer-line {
-      font-family: var(--mono);
-      font-size: 11px;
-      color: var(--muted);
-      text-align: center;
-      padding: 8px 0;
-      letter-spacing: .05em;
-      animation: fadeUp .7s .4s ease both;
-    }
-
-    .footer-line span { color: var(--accent); }
-
-    /* ---- ANIMATIONS ---- */
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-  </style>
-</head>
-<body>
-  <div class="wrapper">
-
-    <!-- HERO -->
-    <div class="hero">
-      <div class="badge">// PROFILE.README</div>
-      <h1>
-        <span class="name">Tesnim</span>
-        <span class="role">Software Engineer &amp; Programmer</span>
-      </h1>
-      <p>
-        Building things with code — from low-level <span>C</span> to interactive
-        <span>web experiences</span>. Comfortable in the terminal, obsessed
-        with clean systems, and always shipping.
-      </p>
-    </div>
-
-    <!-- LANGUAGES + TECH -->
-    <div class="grid-2">
-
-      <!-- Languages -->
-      <div class="card">
-        <div class="section-label">// Languages</div>
-        <div class="pills">
-          <div class="pill"><span class="dot dot-html"></span> HTML</div>
-          <div class="pill"><span class="dot dot-css"></span> CSS</div>
-          <div class="pill"><span class="dot dot-c"></span> C</div>
-          <div class="pill"><span class="dot dot-js"></span> JavaScript</div>
-        </div>
-      </div>
-
-      <!-- Tech & Tools -->
-      <div class="card">
-        <div class="section-label">// Technologies</div>
-        <div class="tech-list">
-          <div class="tech-item"><span class="tech-icon">🐳</span> Docker</div>
-          <div class="tech-item"><span class="tech-icon">🐧</span> Linux</div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- SKILL LEVELS -->
-    <div class="card" style="animation-delay:.3s">
-      <div class="section-label">// Skill Overview</div>
-      <div class="stat-bar-wrap">
-        <div class="stat-row">
-          <div class="stat-label"><span>HTML / CSS</span><span>90%</span></div>
-          <div class="bar-bg"><div class="bar-fill" style="width:90%"></div></div>
-        </div>
-        <div class="stat-row">
-          <div class="stat-label"><span>JavaScript</span><span>78%</span></div>
-          <div class="bar-bg"><div class="bar-fill" style="width:78%"></div></div>
-        </div>
-        <div class="stat-row">
-          <div class="stat-label"><span>C</span><span>72%</span></div>
-          <div class="bar-bg"><div class="bar-fill" style="width:72%"></div></div>
-        </div>
-        <div class="stat-row">
-          <div class="stat-label"><span>Docker &amp; Linux</span><span>80%</span></div>
-          <div class="bar-bg"><div class="bar-fill" style="width:80%"></div></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- FOOTER -->
-    <div class="footer-line">
-      crafted by <span>Tesnim</span> · software engineer · always building
-    </div>
-
-  </div>
-</body>
-</html>
+</div>
